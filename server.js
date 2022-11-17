@@ -5,7 +5,7 @@ const PORT = 8000
 
 
 app.use(cors())
-app.use(express.static('js'))
+app.use(express.static('js'));
 
 let rappers = {
     '21 savage':{
@@ -26,7 +26,7 @@ let rappers = {
 }
 
 app.get('/',(request,respond)=>{
-    respond.sendFile(__dirname + '/index.html')
+    respond.sendFile(__dirname)
 })
 
 app.get('/api/:name',(request,response)=>{
