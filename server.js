@@ -5,7 +5,7 @@ const PORT = 8000
 
 
 app.use(cors());
-app.use(express.static('js'));
+app.use(express.static('public'));
 
 let rappers = {
     '21 savage':{
