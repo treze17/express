@@ -4,7 +4,9 @@ const cors = require('cors')
 const PORT = 8000
 
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://foo.com'
+}));
 app.use(express.static('public'));
 
 let rappers = {
